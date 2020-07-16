@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Meterializecss Style-->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--icon implied-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">       
+    
+    <!--BootStrap Css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--External Personal Stylesheet-->
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+<!--Header Content-->
+<div class="header">                
+            <nav class="nav-extended">
+            <div class="nav-wrapper">
+                    <img src="images/Logo1.png" alt="Smiley face" id=logo> 
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a style="text-decoration: none;" href="index.html">Home</a></li>
+                    <li><a style="text-decoration: none;" href="About_Us.html">About Us</a></li>
+                    <li class="active"><a style="text-decoration: none;" href="Shop.html">Shop</a></li>
+                    <li><a style="text-decoration: none;" href="Training.html">Pad Training</a></li>
+                    <li><a style="text-decoration: none;" href="Contact_Us.html">Contact Us</a></li>
+                    <li>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+    
+
+<!--Body Content-->
+    <div id='padcontainer' class="center">
+<div id='product-component-1574372498716'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'my-very-important-person.myshopify.com',
+      storefrontAccessToken: 'a455c66b4da709d8c994145d3400d123',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '2635187060821',
+        node: document.getElementById('product-component-1574372498716'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15.299999999999999px"
+      }
+    },
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "description": true
+    },
+    "width": "100%",
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+</div>
+<!--Footer Content-->
+    <footer class="page-footer">
+        <div class="footercontainer">
+            <div class="row">
+            <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">Here is the footer</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h6 id="footertext" class="white-text">Want to find out more?  Want to help our cause?</h5>
+                <ul>
+                <li><a id="footertext" class="grey-text text-lighten-3" href="https://twitter.com/home">Check out our Twitter</a></li>
+                
+                <li><a id="footertext" class="grey-text text-lighten-3" href="https://secure.humanesociety.org/site/Donation2?idb=1187937887&df_id=23356&mfc_pref=T&23356.donation=form1&s_src=ad_gg_nonbranded_main_form_07152019&gclid=CjwKCAiA_MPuBRB5EiwAHTTvMX_OM06YivJGOOvwvRl215NoQ-0nGSj92d705plNU19-oOO4_3S62hoCSw0QAvD_BwE&s_preselectFrequency=monthly&s_preselectAmountOneTime=60">Donate to The Humane Society</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="copyright">
+                &copy; Truth Brands
+            </div>
+        </div>
+    </footer>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>
+    
